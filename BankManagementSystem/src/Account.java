@@ -21,4 +21,29 @@ public class Account {
     public double getbalance() {
         return balance;
     }
+
+    public void deposit(double amount) {
+
+        if (amount <= 0) {
+            System.out.println("Error!!! \nThe amount must be positive.");
+            return;
+        }
+
+        balance += amount;
+    }
+
+    public void withdraw(double amount) {
+
+        if (amount <= 0) {
+            System.out.println("Error!!! \nThe amount must be positive.");
+            return;
+        }
+
+        if (amount > balance) {
+            System.out.println("Error!!! \nYou are poor.");
+            return;
+        }
+
+        balance -= amount;
+    }
 }
