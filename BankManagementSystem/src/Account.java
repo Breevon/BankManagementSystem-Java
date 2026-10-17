@@ -46,4 +46,10 @@ public class Account {
 
         balance -= amount;
     }
+
+    public String accountDetails() {
+        return "Account Number: " + accountNumber
+                + " | Account Holder: " + accountHolder
+                + " | Balance: " + String.format("%.2f", balance) + " CHF";
+    }
 }

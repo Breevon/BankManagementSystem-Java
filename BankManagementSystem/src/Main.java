@@ -3,7 +3,10 @@ public class Main {
         System.out.println("Hello World");
 
         Account test = new Account(1, "Test", 100);
-        test.withdraw(3);
+        test.deposit(3);
         System.out.println("Your balance: " + test.getbalance());
+        System.out.println();
+
+        System.out.println(test.accountDetails());
     }
 }
