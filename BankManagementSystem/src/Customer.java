@@ -8,7 +8,7 @@ public class Customer {
         this.name = name;
     }
 
-    public int getcustomerId() {
+    public int getCustomerId() {
         return customerId;
     }
 
